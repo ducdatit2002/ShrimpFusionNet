@@ -29,10 +29,7 @@ This repository and the associated Hugging Face page provide:
 - A **sanitized reference subset** of MMSD25  
 - The **full benchmark protocol**, including:
   - Data preprocessing procedures
-  - Train, validation, and test split definitions
-  - Evaluation scripts and metrics
-
-The public subset is intended to demonstrate data structure, modality alignment, and evaluation methodology.
+The public subset is intended to demonstrate data structure. 
 
 ### What is NOT publicly released
 
