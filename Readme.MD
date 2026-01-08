@@ -41,13 +41,10 @@ The public subset is intended to demonstrate data structure, modality alignment,
 
 Access to the full dataset may be considered for **non-commercial academic research only**, subject to a controlled-access agreement.
 
----
-
 ## 3. Dataset Composition (Full Dataset Description)
 
 The full MMSD25 dataset (described in the paper) consists of:
-
-- 2,650 RGB shrimp images
+- 3, 625 RGB shrimp images
 - 12,404 farmer-generated text descriptions
 - Synchronized multi-channel sensor time series
 - 5 disease classes:
@@ -56,31 +53,9 @@ The full MMSD25 dataset (described in the paper) consists of:
   - AHPND
   - EHP
   - Bacterial necrosis
-
 Each sample is verified by aquaculture experts, with inter-annotator agreement reaching Cohen’s κ = 0.86.
 
----
-
-## 4. Data Alignment and Structure
-
-MMSD25 follows a **one-to-many alignment strategy**:
-
-- One image may correspond to multiple farmer text reports within a temporal window
-- Each image-text pair is aligned with a fixed-length sensor window
-
-A conceptual sample is defined as:
-
-```
-
-(image_id, image, text_report, sensor_window, disease_label)
-
-````
-
-To prevent data leakage, all samples from the same pond remain in the same split.
-
----
-
-## 5. Train / Validation / Test Split
+## 4. Train / Validation / Test Split
 
 The benchmark uses a **region-based (pond-level) split** to evaluate generalization:
 
@@ -90,22 +65,13 @@ The benchmark uses a **region-based (pond-level) split** to evaluate generalizat
 
 This setup supports zero-shot domain evaluation under real deployment conditions.
 
----
-
-## 6. Hugging Face Repository
+## 5. Hugging Face Repository
 
 The public reference subset is hosted on Hugging Face:
 
 https://huggingface.co/ducdatit2002/ShrimpFusionNet
 
-The Hugging Face repository includes:
-- Public sample data
-- Metadata schema
-- Example loading scripts
-
----
-
-## 7. Intended Use
+## 6. Intended Use
 
 MMSD25 is intended for research on:
 
@@ -116,17 +82,13 @@ MMSD25 is intended for research on:
 
 The dataset is **not intended for commercial use**.
 
----
-
-## 8. Limitations
+## 7. Limitations
 
 - The public subset is not statistically representative of the full dataset
 - Some environmental and operational variability present in the full dataset is not exposed
 - Results obtained on the public subset should not be interpreted as full benchmark performance
 
----
-
-## 9. Citation
+## 8. Citation
 
 If you use MMSD25 or the benchmark protocol, please cite:
 
@@ -138,13 +100,9 @@ If you use MMSD25 or the benchmark protocol, please cite:
 }
 ````
 
----
-
-## 10. License
+## 9. License
 
 The public subset of MMSD25 is released for **non-commercial research use only**.
-
----
 
 ## 11. Contact
 
@@ -153,15 +111,4 @@ For questions or controlled access requests to the full dataset:
 * Duc Dat Pham
 * Email: [ducdatit2002@gmail.com](mailto:ducdatit2002@gmail.com)
 
-```
-
----
-
-Nếu bạn muốn:
-- viết lại **bằng tiếng Việt**
-- rút gọn còn đúng 1 trang cho GitHub
-- tách riêng README GitHub và Dataset Card cho Hugging Face
-- chỉnh câu chữ cho đúng style reviewer journal hoặc conference
-
-cứ nói, mình làm tiếp đúng chuẩn.
 ```
