@@ -1,14 +1,7 @@
+# ShrimpFusionNet for Real-Time Shrimp Disease Detection Using Trust-Aware Multimodal Fusion
 
-```markdown
-# MMSD25 – Multi-Modal Shrimp Disease Dataset 2025 (Public Subset)
-
-MMSD25 is a real-world multimodal shrimp disease dataset introduced in the paper:
-
-**ShrimpFusionNet for Real-Time Shrimp Disease Detection Using Trust-Aware Multimodal Fusion**
-
-This repository provides a **public sanitized reference subset** of MMSD25 together with the **benchmark protocol** to support reproducibility and further research.
-
----
+MMSD25 is a real-world multimodal shrimp disease dataset introduced in this paper. 
+This repository provides a public sanitized reference subset of MMSD25 together with the benchmark protocol to support reproducibility and further research.
 
 ## 1. Dataset Overview
 
@@ -16,18 +9,16 @@ MMSD25 is designed for shrimp disease detection under real aquaculture condition
 
 The dataset integrates three modalities:
 
-- **RGB shrimp images** captured directly in ponds
-- **Farmer-written textual reports** describing shrimp health and pond observations
-- **Environmental sensor streams**, including:
+- RGB shrimp images captured directly in ponds
+- Farmer-written textual reports describing shrimp health and pond observations
+- Environmental sensor streams, including:
   - Temperature
   - pH
   - Dissolved oxygen
   - Turbidity
   - Salinity
 
-Data were collected from **8 shrimp ponds** in the Mekong Delta, Vietnam, under diverse environmental and operational conditions.
-
----
+Data were collected from 8 shrimp ponds in the Mekong Delta, Vietnam, under diverse environmental and operational conditions.
 
 ## 2. Public Release Scope
 
